@@ -104,7 +104,7 @@ th {
 										<td style="vertical-align: middle">${item.email}</td>
 										<td style="vertical-align: middle">${item.role}</td>
 										<td style="vertical-align: middle"><img alt="product"
-											src="/upload/${item.photo}"
+											src="${item.photo}"
 											style="width: 55px; height: 65px;"></td>
 										
 

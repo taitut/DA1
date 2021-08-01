@@ -74,5 +74,10 @@
 			});
 		});
 	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$( "#AS" ).addClass("active in");
+		});
+	</script>
 </body>
 </html>

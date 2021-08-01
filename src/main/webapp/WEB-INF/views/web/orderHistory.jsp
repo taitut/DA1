@@ -43,7 +43,7 @@
 														<td class="text-center"><a href="#"><img
 																width="85" class="img-thumbnail"
 																alt="Aspire Ultrabook Laptop"
-																src="/upload/${item.oderdetails.get(0).product.image }">
+																src="${item.oderdetails.get(0).product.image }">
 														</a></td>
 														<td class="text-left">${item.name }</td>
 														<td class="text-center">${item.address}</td>

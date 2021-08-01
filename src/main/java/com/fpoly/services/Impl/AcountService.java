@@ -61,7 +61,7 @@ public class AcountService implements IAccountService {
 				accountsEntity.setRole(Role.USER);
 			}
 			if (account.getPhoto() == null) {
-				accountsEntity.setPhoto("defaultAvatar.jpg");
+				accountsEntity.setPhoto("/defaultAvatar.jpg");
 			}
 			accountsEntity.setForgotCode(generatedString);
 			accountsEntity.setPassword(testpass.encrytePassword(account.getPassword()));

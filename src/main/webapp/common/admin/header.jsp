@@ -33,7 +33,7 @@
 					class="dropdown-toggle"> <span class="user-info"> <small>Xin Chào,</small>
 							<%=SecurityUtils.getPrincipal().getFullName()%>
 					</span> <i class="ace-icon fa fa-caret-down"></i>
-					<img alt="" src="/upload/<%=SecurityUtils.getPrincipal().getPhoto()%>" style=" width: 50px; height: 50px;"/>
+					<img alt="" src="<%=SecurityUtils.getPrincipal().getPhoto()%>" style=" width: 50px; height: 50px;"/>
 				</a>
 
 					<ul

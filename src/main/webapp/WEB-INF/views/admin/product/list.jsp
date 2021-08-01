@@ -119,7 +119,7 @@ th {
 										<td style="vertical-align: middle">${item.ram}</td>
 										<td style="vertical-align: middle">${item.quantity}</td>
 										<td style="vertical-align: middle"><img alt="product"
-											src="/upload/${item.image}"
+											src="${item.image}"
 											style="width: 85px; height: 85px;"></td>
 
 

@@ -81,7 +81,7 @@
 								<c:forEach var="item" items="${orderDetail}">
 									<tr>
 										<td class="text-left"><img alt=""
-											src="/upload/${item.product.image}" width="50px"
+											src="${item.product.image}" width="50px"
 											height="55px"> <br> ${item.product.name}</td>
 										<td class="text-left">${item.product.categories.name}</td>
 										<td class="text-right">${item.quantity}</td>

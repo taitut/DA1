@@ -32,7 +32,7 @@
 				<div class="row">
 					<div class="col-md-4 clearfix">
 						<div class="logo pull-left">
-							<a href="/trang-chu"><img src="/template/web/images/home/logo.png" alt="" /></a>
+							<a href="/trang-chu"><img src="/templates/web/images/home/logo.png" alt="" /></a>
 						</div>
 					</div>
 					<div class="col-md-8 clearfix">

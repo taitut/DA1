@@ -18,6 +18,12 @@
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
+	
+	<dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>7.0.1</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -58,6 +64,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/listenablefuture -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>listenablefuture</artifactId>
+    <version>9999.0-empty-to-avoid-conflict-with-guava</version>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/failureaccess -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>failureaccess</artifactId>
+    <version>1.0.1</version>
+</dependency>
 		
 		<dependency>
   <groupId>org.apache.tomcat.embed</groupId>
@@ -69,7 +87,11 @@
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.20</version>
 </dependency>
-
+  <dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>7.0.1</version>
+        </dependency>
 	<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>javax.servlet.jsp-api</artifactId>

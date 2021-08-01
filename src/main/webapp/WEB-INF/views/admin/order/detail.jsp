@@ -50,7 +50,7 @@
                             <c:forEach var = "item" items = "${detail}">
                                 <tr>
                                     <td><img alt="product"
-											src="/upload/${item.product.image}"
+											src="${item.product.image}"
 											style="width: 85px; height: 85px;">
 											${item.product.name}</td>
                                     

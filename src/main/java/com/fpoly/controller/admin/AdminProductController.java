@@ -9,7 +9,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.StringUtils;
+
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +24,8 @@ import org.springframework.web.multipart.MultipartFile;
 import com.fpoly.entity.ProductEntity;
 import com.fpoly.services.ICategoriesService;
 import com.fpoly.services.IProductServices;
-import com.fpoly.utils.FileUload;
+import com.fpoly.services.Impl.FileServices;
+
 import com.fpoly.utils.MessageUtils;
 
 @Controller
@@ -36,7 +37,8 @@ public class AdminProductController {
 	private ICategoriesService cate;
 	@Autowired
 	private MessageUtils message;
-
+	@Autowired
+	private FileServices file;
 	
 	 
 	@GetMapping("/edit")
@@ -70,9 +72,7 @@ public class AdminProductController {
 			return "admin/product/edit";
 		}
 		if (!multipart.isEmpty()) {
-			String fileName = StringUtils.cleanPath(multipart.getOriginalFilename());
-			String uploadDir = "upload/";
-			FileUload.saveFile(uploadDir, fileName, multipart);
+			String fileName = file.upload(multipart);
 			product.setImage(fileName);
 			productS.save(product);
 		}
@@ -92,9 +92,7 @@ public class AdminProductController {
 		}
 		
 		if (!multipart.isEmpty()) {	
-			String fileName = StringUtils.cleanPath(multipart.getOriginalFilename());
-			String uploadDir = "upload/";
-			FileUload.saveFile(uploadDir, fileName, multipart);
+			String fileName = file.upload(multipart);
 			product.setImage(fileName);
 			
 		}

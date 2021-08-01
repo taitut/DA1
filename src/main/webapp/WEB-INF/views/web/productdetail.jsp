@@ -26,7 +26,7 @@
 						</div><!--/category-products-->
 
 						<div class="shipping text-center"><!--shipping-->
-							<img src="/template/web/template/web/images/home/shipping.jpg" alt="" />
+							<img src="/templates/web/template/web/images/home/shipping.jpg" alt="" />
 						</div><!--/shipping-->
 					
 					</div>
@@ -36,13 +36,13 @@
 					<div class="product-details"><!--product-details-->
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="/upload/${model.image}" alt="" />
+								<img src="${model.image}" alt="" />
 							</div>
 							
 						</div>
 						<div class="col-sm-7">
 							<div class="product-information"><!--/product-information-->
-								<img src="/template/web/images/product-details/new.jpg" class="newarrival" alt="" />
+								<img src="/templates/web/images/product-details/new.jpg" class="newarrival" alt="" />
 								<h2>${model.name}</h2>
 								<p>CPU: ${model.cpu}</p>
 								<p>CPU: ${model.ram}</p>

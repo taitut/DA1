@@ -47,7 +47,7 @@ public class HomeController {
 	
 	  @GetMapping("/trang-chu")
 	   public String homePage(Model model, @RequestParam("p") Optional<Integer> p) {
-		  Pageable pageable = PageRequest.of(p.orElse(0), 8);
+		  Pageable pageable = PageRequest.of(p.orElse(0), 50);
 			Page<ProductEntity> page = productS.findAll(pageable);
 			
 			model.addAttribute("model", page);

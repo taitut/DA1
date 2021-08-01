@@ -100,7 +100,7 @@
                                             <div class="col-sm-9">
                                                 <input type="file" name="photo" accept="image/png,image/jpeg" Class="form-control" />
                                                 <span   Style="color:red; font-style: italic;" >${messImg}</span>
-                                                <img alt="" src="/upload/${model.image}" style="width:100px"  >
+                                                <img alt="" src="${model.image}" style="width:100px"  >
                                             </div>
                                         </div>
                                         <br/>
@@ -162,7 +162,7 @@
                
 			function waningDelete() {
                     swal({
-                            title: "Bạn chắc chắn muốn xoá?",
+                            title: "Bạn chắc chắn muốn cập nhật?",
                             text: "Dữ liệu sẽ được cập nhật lại",
                             icon: "warning",
                             buttons: true,

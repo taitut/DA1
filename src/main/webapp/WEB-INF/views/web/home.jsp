@@ -83,7 +83,7 @@
 						</div><!--/price-range-->
 						
 						<div class="shipping text-center"><!--shipping-->
-							<img src="/template/web/images/home/shipping.jpg" alt="" />
+							<img src="/templates/web/images/home/shipping.jpg" alt="" />
 						</div><!--/shipping-->
 					
 					</div>
@@ -97,7 +97,7 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="/upload/${item.image}" alt="" />
+											<img src="${item.image}" alt="" />
 											<h2 > <fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${item.price}" /> ₫</h2>
 											<p>${item.name}</p>
 											<a href="/trang-chu/san-pham/${item.id}" class="btn btn-default add-to-cart"><i class="fa fa-info-circle" aria-hidden="true"></i>Mua ngay</a>
@@ -127,14 +127,14 @@
 						</div>
 						<div class="tab-content">
 						<c:forEach var="cateName" items="${category}">
-							<div class="tab-pane fade active in" id="${cateName.code}" >
+							<div class="tab-pane fade " id="${cateName.code}" >
 							<c:forEach var = "item" items = "${model.content}">
 								<c:if test="${item.categories.code == cateName.code }">
 								<div class="col-sm-3">
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="/upload/${item.image}" alt="" />
+												<img src="${item.image}" alt="" />
 												<h2 > <fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${item.price}" /> ₫</h2>
 												<p>${item.name}</p>
 												<a href="/trang-chu/san-pham/add/${item.id}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>

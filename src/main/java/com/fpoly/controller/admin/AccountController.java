@@ -23,6 +23,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.fpoly.entity.AccountsEntity;
 import com.fpoly.entity.Role;
 import com.fpoly.services.IAccountService;
+import com.fpoly.services.Impl.FileServices;
 import com.fpoly.utils.MessageUtils;
 
 @Controller
@@ -31,7 +32,7 @@ public class AccountController {
 	@Autowired
 	private IAccountService acc;
 	@Autowired
-	private ImageUpload imageUp;
+	private FileServices file;
 	@Autowired
 	private MessageUtils message;
 	@GetMapping("/list")
@@ -93,7 +94,7 @@ public class AccountController {
 			return "admin/account/edit";
 		}
 		if (!multipart.isEmpty()) {
-			String fileName = imageUp.imageUpload(multipart);
+			String fileName = file.upload(multipart);
 			accountEntity.setPhoto(fileName);
 			acc.save(accountEntity);
 		}
@@ -117,7 +118,7 @@ public class AccountController {
 			return "redirect:/admin/account/edit?id="+accountEntity.getId()+"&message=error_system";
 		}
 		if (!multipart.isEmpty()) {
-			String fileName = imageUp.imageUpload(multipart);
+			String fileName = file.upload(multipart);
 			accountEntity.setPhoto(fileName);
 		}
 		Long id = acc.save(accountEntity);

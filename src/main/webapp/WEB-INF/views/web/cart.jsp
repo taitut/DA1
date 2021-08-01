@@ -35,7 +35,7 @@
            				 <input type="hidden" name="id" value ="${item.product.id}" />
 					 	<tr>
 							<td class="cart_product">
-								<a href="/trang-chu/san-pham/${item.product.id}"><img src="/upload/${item.product.image}" style="width: 170px;" alt=""></a>
+								<a href="/trang-chu/san-pham/${item.product.id}"><img src="${item.product.image}" style="width: 170px;" alt=""></a>
 							</td>
 							<td class="cart_description">
 								<h4><a href="/trang-chu/san-pham/${item.product.id}" >${item.product.name}</a></h4>

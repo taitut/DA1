@@ -99,7 +99,7 @@
                                             <label class="col-sm-3 control-label no-padding-right">Avatar</label>
                                             <div class="col-sm-9">
                                                 <input type="file" name="photoo" accept="image/png,image/jpeg" Class="form-control" />
-                                                <img alt="" src="/upload/${model.photo}" style="width:100px"  >
+                                                <img alt="" src="${model.photo}" style="width:100px"  >
                                                 <span   Style="color:red; font-style: italic;" >${messImg}</span>
                                                    <br/>
                                         <br/>
