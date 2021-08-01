@@ -182,14 +182,14 @@ var CKBUILDER_CONFIG = {
 		'sq' : 1,
 		'sr' : 1,
 		'sr-latn' : 1,
-		'sv' : 1,
+		'sv' : 0,
 		'th' : 1,
 		'tr' : 1,
-		'tt' : 1,
-		'ug' : 1,
-		'uk' : 1,
+		'tt' : 0,
+		'ug' : 0,
+		'uk' : 0,
 		'vi' : 1,
-		'zh' : 1,
-		'zh-cn' : 1
+		'zh' : 0,
+		'zh-cn' : 0
 	}
 };

@@ -44,10 +44,13 @@ public class AcountService implements IAccountService {
 				account.setPhoto(oldAccount.get().getPhoto());
 			}
 			accountsEntity = account;
+			
 			if (!oldAccount.get().getPassword().equals(account.getPassword())) {
 				accountsEntity.setPassword(testpass.encrytePassword(account.getPassword()));
+			}else {
+				accountsEntity.setPassword(oldAccount.get().getPassword());
 			}
-			accountsEntity.setPassword(testpass.encrytePassword(account.getPassword()));
+			
 			accountsEntity.setForgotCode(generatedString);
 			accountsEntity.setCreateDate(oldAccount.get().getCreateDate());
 			acc.save(accountsEntity);

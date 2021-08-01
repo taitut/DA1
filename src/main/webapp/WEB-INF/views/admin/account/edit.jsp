@@ -119,7 +119,7 @@
                                             <div class="col-sm-12">                                              
                                             <c:if test="${not empty model.id}">
                                             	<input type="hidden" name="_method" value="put">
-                                            	<input onclick="waningDelete()"  class="btn btn-white btn-warning btn-bold"  value="Cập nhật tài khoản" />
+                                            	<input onclick="waningDelete()" type = "button"   class="btn btn-white btn-warning btn-bold"  value="Cập nhật tài khoản" />
                                    		 	</c:if> 
                                    		 	 <c:if test="${empty model.id}">
                                             	<input type="submit" formmethod="post" class="btn btn-white btn-warning btn-bold"  value="Thêm tài khoản" />
@@ -141,31 +141,25 @@
                     window.history.back();
                 })
                function waningDelete() {
-                	$('#btnCancel').click(function() {
-                        window.history.back();
-                    })
-                   
-    				function waningDelete() {
-                        swal({
-                                title: "Bạn chắc chắn	?",
-                                text: "Dữ liệu sẽ được cập nhật lại",
-                                icon: "warning",
-                                buttons: true,
-                                dangerMode: true,
-                            })
-                            .then((willDelete) => {
-                                if (willDelete) {
-                                	$( "#formSubmit" ).submit();
-                                     
-                                    swal("Xong! Dữ liệu đã được cập nhật", {
-                                        icon: "success",
-                                    });
-                                } else {
-                                    swal("Cứ từ từ!");
-                                }
-                            });
-                    }
-
+                    swal({
+                            title: "Bạn chắc chắn muốn xoá?",
+                            text: "Dữ liệu sẽ được cập nhật lại",
+                            icon: "warning",
+                            buttons: true,
+                            dangerMode: true,
+                        })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                            	$( "#formSubmit" ).submit();
+                                 
+                                swal("Xong! Dữ liệu đã được cập nhật", {
+                                    icon: "success",
+                                });
+                            } else {
+                                swal("Cứ từ từ!");
+                            }
+                        });
+                }
             </script>
         </body>
 

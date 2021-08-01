@@ -12,11 +12,10 @@
 
 
             <link rel="stylesheet" href="/templates/admin/assets/css/bootstrap.min.css"/>
-            <link rel="stylesheet" href="/templates/admin/font-awesome/4.5.0/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="/templates/admin/font-awesome/4.5.0/css/font-awesome.min.css"/>
             <link rel="stylesheet" href="/templates/admin/assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
             <script src="/templates/admin/assets/js/ace-extra.min.js"></script>
-            <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
             <script type='text/javascript' src='/templates/admin/js/jquery-2.2.3.min.js'></script>
             <script src="/templates/admin/assets/js/jquery.2.1.1.min.js"></script>
             <link rel="stylesheet" href="/templates/admin/assets/css/jquery-ui.css" />
