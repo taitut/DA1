@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+<content-processor>
+		<tag-rule-bundle class="com.fpoly.sitemesh.DecoratorsTag" />
+	</content-processor>
+	<mapping path="/trang-chu*" decorator = "/decorators/web.jsp"/>
+		
+	<mapping path="/trang-chu/invoice" decorator = "/decorators/webInvioce.jsp"/>
+	<mapping path="/login" decorator = "/decorators/login.jsp"/>
+
+	<mapping path="/admin*" decorator = "/decorators/admin.jsp"/>
+<!-- 	<mapping path="/register" decorator = "/decorators/login.jsp"/> -->
+</sitemesh>
