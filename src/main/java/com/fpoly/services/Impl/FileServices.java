@@ -28,7 +28,7 @@ public class FileServices {
 		String DUrl = "https://firebasestorage.googleapis.com/v0/b/assignment-img.appspot.com/o/%s?alt=media";
         BlobId blobId = BlobId.of("assignment-img.appspot.com", fileName);
         BlobInfo blobInfo = BlobInfo.newBuilder(blobId).setContentType("media").build();
-        Credentials credentials = GoogleCredentials.fromStream(new FileInputStream("D:\\assignment-img-firebase-adminsdk-kfpfg-edb6dd7641.json"));
+        Credentials credentials = GoogleCredentials.fromStream(new FileInputStream("/assignment-img-firebase-adminsdk-kfpfg-edb6dd7641.json"));
         Storage storage = StorageOptions.newBuilder().setCredentials(credentials).build().getService();
         storage.create(blobInfo, Files.readAllBytes(file.toPath()));
         return String.format(DUrl, URLEncoder.encode(fileName, StandardCharsets.UTF_8));

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.fpoly</groupId>
-	<artifactId>Test1</artifactId>
+	<artifactId>DuAn1</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-	<name>Test1</name>
+	<name>DuAn1</name>
 	<description>testdeployd</description>
 	<properties>
 		<java.version>11</java.version>

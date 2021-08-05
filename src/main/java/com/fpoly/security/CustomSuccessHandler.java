@@ -1,4 +1,4 @@
-package com.fpoly.securiry;
+package com.fpoly.security;
 
 import java.io.IOException;
 import java.util.List;

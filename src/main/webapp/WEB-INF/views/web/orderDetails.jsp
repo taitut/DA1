@@ -101,7 +101,7 @@
 								<tr>
 									<td colspan="2"></td>
 									<td class="text-right"><b>Tổng tiền</b></td>
-									<td class="text-right"><td class="text-right"> <fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${order.totalPrice}" />₫</td></td>
+									<td class="text-right"><td class="text-right"> <fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${order.totalPrice}" />₫</td>
 									<td></td>
 								</tr>
 							</tfoot>

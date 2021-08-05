@@ -48,8 +48,8 @@
 								<p>CPU: ${model.ram}</p>
 								
 								<span>
-								<span><fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${item.price}" /> ₫</span>
-									
+								<span><fmt:formatNumber type = "number" maxFractionDigits = "3" value = "${model.price}" />₫</span>
+									${item.price} 
 									<label>Quantity:</label>
 									<form action="/trang-chu/san-pham/add/${model.id}" method="get">
 									<input type="number" value ="1" name = "sl" min ="1" max = "${model.quantity}" />

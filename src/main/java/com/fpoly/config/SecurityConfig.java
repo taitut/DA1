@@ -10,7 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
-import com.fpoly.securiry.CustomSuccessHandler;
+import com.fpoly.security.CustomSuccessHandler;
 import com.fpoly.services.Impl.CustomUserDetailsService;
 
 @Configuration

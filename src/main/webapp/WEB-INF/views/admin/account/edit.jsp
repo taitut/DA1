@@ -142,7 +142,7 @@
                 })
                function waningDelete() {
                     swal({
-                            title: "Bạn chắc chắn muốn xoá?",
+                            title: "Bạn chắc chắn muốn cập nhật?",
                             text: "Dữ liệu sẽ được cập nhật lại",
                             icon: "warning",
                             buttons: true,

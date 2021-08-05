@@ -8,10 +8,10 @@
             <meta charset="UTF-8">
             <title>Register</title>
         </head>
-	<link rel="stylesheet" href="/template/admin/assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="/template/admin/font-awesome/4.5.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="/template/admin/assets/css/ace.min.css" />
-	<link rel="stylesheet" href="/template/admin/assets/fonts/fonts.googleapis.com.css'/>" class="ace-main-stylesheet" id="main-ace-style" />
+	<link rel="stylesheet" href="/templates/admin/assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/templates/admin/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/templates/admin/assets/css/ace.min.css" />
+	<link rel="stylesheet" href="/templates/admin/assets/fonts/fonts.googleapis.com.css'/>" class="ace-main-stylesheet" id="main-ace-style" />
 	<script src="/templates/admin/assets/js/ace-extra.min.js"></script>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -96,10 +96,10 @@
                                                             class="ace-icon fa fa-retweet"></i>
                                                     </span>
                                                     <span Style="color:red; font-style: italic;">${repass}</span>
-                                                </label> <label class="block"> <input type="checkbox" class="ace" />
+                                                </label> <!-- <label class="block"> <input type="checkbox" class="ace" />
                                                     <span class="lbl"> I accept the <a href="#">User Agreement</a>
                                                     </span>
-                                                </label>
+                                                </label> -->
 
                                                         <div class="space-24"></div>
 
